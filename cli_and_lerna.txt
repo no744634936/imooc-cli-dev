@@ -78,3 +78,12 @@ lerna diff 查看修改的地方
 
 发布之前都要对版本号进行升级
 lerna version
+主要选择patch ，minor ，Major 其中一个
+然后弹出选项是否创建1.0.1版本，
+首次选no,之后选yes
+
+发布
+lerna publish
+主要选择patch ，minor ，Major 其中一个
+然后弹出选项是否创建1.0.1版本，
+首次选no,之后选yes
