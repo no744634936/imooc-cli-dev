@@ -73,4 +73,8 @@ lerna run -- test
 在packages文件夹里对特定包都执行一条package.json中的scripts中的命令命令
 lerna run --scope @imooc-cli-dev-zhang/core test
 
+lerna diff 查看修改的地方
+发布之前要把修改的东西提交到github，也可以提交到gitee
+
 发布之前都要对版本号进行升级
+lerna version
