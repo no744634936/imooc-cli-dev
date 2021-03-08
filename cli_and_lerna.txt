@@ -1,0 +1,76 @@
+npm i -g lerna //先在自己的电脑上添加个lerna
+npm i -D lerna
+lerna init
+写.gitignore 文件
+
+
+
+创建两个npm的项目
+
+lerna create core
+
+-----
+package name 写上 @imooc-cli-dev/core
+version 写上1.0.0
+description 写上 imooc-cli-dev core
+-----
+packages 里面就会有一个 自动生成 core/lib/core.js 文件
+
+
+lerna create utils-----
+package name 写上 @imooc-cli-dev/utils
+version 写上1.0.0
+description 写上 imooc-cli-dev utils
+-----
+packages 里面就会有一个 自动生成 utils/lib/utils.js 文件
+
+
+
+@imooc-cli-dev 就是npm 管理画面里的组织名,这个group必须要建立，不容易名字产生冲突
+去npm 管理画面
+点击 add orgnizition
+输入imooc-cli-dev
+点击create
+
+
+
+常用操作
+
+lerna add 包名
+给packages文件夹里的core，utils两个包同时安装同一个npm 包
+
+lerna clean 
+清除所有安装的包，注意是所有packages文件夹里的core，utils两个包里的所有依赖
+
+lerna bootstrap
+恢复删除的依赖
+
+
+手动删除 package.json里写好的依赖名
+lerna bootstrap 就不能恢复了
+
+lerna add eslint packages/core
+给core这个包安装eslint依赖
+
+lerna link 是packages文件夹里的各种包之间的相互依赖时使用的
+
+在packages/core/package.json 文件的dependencies里写上
+"@imooc-cli-dev-zhang/utils":"^1.0.0"
+然后 lerna link 就可以在 core文件夹里安装本地的@imooc-cli-dev-zhang/utils 依赖
+
+
+在packages文件夹里对所有包都执行同一条命令
+lerna exec -- command
+
+在packages文件夹里对特定包都执行一条命令
+lerna exec --scope @imooc-cli-dev-zhang/core command
+
+
+
+在packages文件夹里对所有包都执行同一条package.json中的scripts中的命令
+lerna run -- test
+
+在packages文件夹里对特定包都执行一条package.json中的scripts中的命令命令
+lerna run --scope @imooc-cli-dev-zhang/core test
+
+发布之前都要对版本号进行升级
