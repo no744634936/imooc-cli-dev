@@ -1,6 +1,6 @@
 {
   "name": "@imooc-cli-dev-zhang/core",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "imooc-cli-dev-zhang core",
   "author": "zhanghaifeng2019 <zhang@rentracks.co.jp>",
   "homepage": "",
@@ -20,7 +20,7 @@
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "dependencies": {
-    "@imooc-cli-dev-zhang/utils": "^1.0.3"
+    "@imooc-cli-dev-zhang/utils": "^1.0.5"
   },
   "publishConfig": {
     "access": "public"
