@@ -2,7 +2,13 @@ npm i -g lerna //先在自己的电脑上添加个lerna
 npm i -D lerna
 lerna init
 写.gitignore 文件
-
+----
+node_modules
+.vscode
+.idea
+packages/**/node_modules
+lerna-debug.log
+----
 
 
 创建两个npm的项目
