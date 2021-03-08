@@ -22,5 +22,8 @@
   "dependencies": {
     "@imooc-cli-dev-zhang/utils": "^1.0.3"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "gitHead": "8886635aa320198d25a7df41387b2160ab05f2d5"
 }

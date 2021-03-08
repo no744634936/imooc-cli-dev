@@ -89,7 +89,13 @@ lerna version
 首次选no,之后选yes
 
 发布
-npm publish --access=public
+使用了 orgnizition 上传的时候默认包都时private的，必须将包公开
+在packages文件夹里的所有包的 package.json 里面写上
+"publishConfig": {
+  "access": "public"
+}
+
+npm publish 
 主要选择patch ，minor ，Major 其中一个
 然后弹出选项是否创建1.0.1版本，
 首次选no,之后选yes
