@@ -1,13 +1,13 @@
 {
   "name": "@imooc-cli-dev-zhang/core",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "imooc-cli-dev-zhang core",
   "author": "zhanghaifeng2019 <zhang@rentracks.co.jp>",
   "homepage": "",
   "license": "ISC",
   "main": "lib/core.js",
-  "bin":{
-      "imooc-cli-dev":"bin/index.js"
+  "bin": {
+    "imooc-cli-dev": "bin/index.js"
   },
   "directories": {
     "lib": "lib",
@@ -20,7 +20,7 @@
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "dependencies": {
-    "@imooc-cli-dev-zhang/utils": "^1.0.2"
+    "@imooc-cli-dev-zhang/utils": "^1.0.3"
   },
   "gitHead": "8886635aa320198d25a7df41387b2160ab05f2d5"
 }
