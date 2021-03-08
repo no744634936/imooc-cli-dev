@@ -99,3 +99,6 @@ npm publish
 主要选择patch ，minor ，Major 其中一个
 然后弹出选项是否创建1.0.1版本，
 首次选no,之后选yes
+
+
+遇到版本号错误就手动升级每个package.json 文件的版本号
